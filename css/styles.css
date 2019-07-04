@@ -150,29 +150,52 @@ ul{
 
 
 body{
-    background: #419980;
+    
 
 }
+
+
 
 h1{
 	font-family: 'hkgrotesk-semibold', 'work sans semibold';
 	font-size: 80px;
     line-height: 84px;
-	color: #fff;
+	
 }
+
+h2{
+    font-family: 'hkgrotesk-semibold', 'work sans semibold';
+    font-size: 42px;
+    line-height: 46px;
+    
+}
+
 
 .txt_20{
     font-family: 'hkgrotesk', 'work sans';
     font-size: 20px;
     line-height: 28px;
-    color: #fff;
- 
+    
+ }
+
+.txt_14{
+    font-family: 'hkgrotesk', 'work sans';
+    font-size: 14px;
+    line-height: 22px;
+    
+ }
+
+.right_txt .txt_20 {
+     margin-left: 0.5rem;
 
 }
 
-#icon_txt {
-    margin-left: 0.5rem;
+.color_white{
+    color: #fff;
+}
 
+.color_accent{
+    color:#419980;
 }
 
 
@@ -181,6 +204,7 @@ h1{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15vh 15vh 1fr 1fr 1fr;
     grid-gap: 1rem;
+    background: #419980;
 }
 
 
@@ -224,10 +248,23 @@ h1{
     width: 40vw;
 }
 
+.first_scroll_txt .txt_20{
+    color: #fff;
+
+}
+
+.second_scroll_txt_container .txt_14{
+    color: #419980;
+}
+
 .first_scroll_icon_txt{
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
 
+}
+
+.second_scroll{
+    background: #fff;
 }
