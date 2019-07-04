@@ -166,6 +166,12 @@ h1{
     font-size: 20px;
     line-height: 28px;
     color: #fff;
+ 
+
+}
+
+#icon_txt {
+    margin-left: 0.5rem;
 
 }
 
@@ -173,13 +179,14 @@ h1{
 .first_scroll{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 1fr 1fr;
+    grid-template-rows: 15vh 15vh 1fr 1fr 1fr;
+    grid-gap: 1rem;
 }
 
 
 .first_scroll_txt_container{
-    grid-area: 3 / 1 / 5 / 2;
-    margin-left: 40px;
+    grid-area: 3 / 1 / 6 / 2;
+    margin-left: 2rem;
   ;
     }
 
@@ -192,7 +199,7 @@ h1{
 .first_scroll_bg_img{
     
     width: 100%;
-    height: 350px;
+    height: 30vh;
     object-fit: cover;
    
 }
@@ -203,17 +210,24 @@ h1{
 }
 
 .right_txt{
-    grid-area: 4 / 2 / 5 / 3;
+    grid-area: 4 / 2 / 6 / 3;
     
 }
 
 .devices_img{
-    max-height: 554px;
+    max-height: 27rem;
     object-fit: cover;
 }
 
 .first_scroll_txt{
-    margin-top: 40px;
+    margin-top: 2rem;
     width: 40vw;
 }
 
+.first_scroll_icon_txt{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+
+}
