@@ -243,7 +243,11 @@ main{
     padding-bottom: 2rem;
 }   
 
-
+.first_scroll_devices_txt img{
+    flex-shrink:0;
+    flex-grow:0;
+    object-fit:contain;
+}
 
 .first_scroll_devices_txt article{
    
