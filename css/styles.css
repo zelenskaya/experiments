@@ -185,7 +185,7 @@
 
 main{
     display: grid;
-    grid-row-gap: 1rem;
+    grid-gap: 1rem;
 }
 
 .first_scroll_title h1{
