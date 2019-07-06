@@ -245,7 +245,7 @@ main{
     color: #419980;
 }
 
-@media (min-width: 640px)
+@media (min-width: 40em)
 {
     h1{
     	font-family: 'hkgrotesk-semibold', 'work sans semibold';
@@ -350,7 +350,7 @@ main{
     }
 }
 
-@media (max-width: 640px)
+@media (max-width: 40em)
 {
     h1{
         font-family: 'hkgrotesk-medium', 'work sans medium';
