@@ -466,7 +466,7 @@ main{
 
     main{
         display: grid;
-        grid-template-columns: 5vw 1fr 5vw;
+        grid-template-columns: 5vw 90vw 5vw;
         grid-template-rows: repeat (11, auto);
         
     }
