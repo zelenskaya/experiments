@@ -185,7 +185,7 @@
 
 main{
     display: grid;
-    grid-gap: 1rem;
+    grid-row-gap: 1rem;
 }
 
 .first_scroll_title h1{
@@ -380,13 +380,13 @@ main{
 
     main{
         display: grid;
-        grid-template-columns: 5vw auto 5vw;
+        grid-template-columns: 5vw 90vw 5vw;
         grid-template-rows: repeat (11, auto);
-        grid-gap: 1rem;
+        
     }
 
     .first_scroll_bg_img{
-        grid-area: 1 / 1 / 3 / 4;
+        grid-area: 1 / 1 / 8 / 4;
     }
 
     .first_scroll_bg_img img{
@@ -433,11 +433,14 @@ main{
    }
 
     .first_scroll_bg{
-        grid-area: 1 / 1 / 5 / 13;
+        grid-area: 1 / 1 / 8 / 4;
     }
 
     .second_scroll_txt{
         grid-area: 11 / 2 / 12 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .second_scroll_txt h2{
@@ -447,6 +450,7 @@ main{
 
     .second_scroll_txt .txt{
         padding-top: 1rem;
+        align-self: flex-start;
 
     }
 
@@ -459,7 +463,7 @@ main{
     }
 
     .second_scroll_photo{
-        grid-area: 7 / 2 / 9 / 3;
+        grid-area: 7 / 1 / 9 / 4;
     }
 
     .second_scroll_photo img{
