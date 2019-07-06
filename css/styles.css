@@ -145,50 +145,7 @@
     
 }
 
-.topnav {
-  background-color: #419980;
-  overflow: hidden;
-  height: 8vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 
-}
-
-.topnav a{
-    color: #d0f2e8;
-    font-family: 'hkgrotesk-light', 'work sans light';
-    font-size: 14px;
-    line-height: 22px;
-    text-decoration:none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-
-}
-
-.topnav a:hover{
-    color: #fff;
-}
-
-.topnav button{
-    background-color: #419980;
-    border: 1px solid #fff;
-    color: #fff;
-    font-family: 'hkgrotesk', 'work sans';
-    padding: 15px 62px;
-    display: inline-block;
-    height: 50px;
-    border-radius: 25px;
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 4vw;
-}
-
-.topnav button:hover{
-    background-color: #fff;
-    color: #419980;
-    }
 
  .first_scroll_icon_txt article{
     display: flex;
@@ -311,6 +268,51 @@ main{
 
 @media (min-width: 40em)
 {
+
+    .topnav {
+  background-color: #419980;
+  overflow: hidden;
+  height: 8vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.topnav a{
+    color: #d0f2e8;
+    font-family: 'hkgrotesk-light', 'work sans light';
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration:none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+
+}
+
+.topnav a:hover{
+    color: #fff;
+}
+
+.topnav button{
+    background-color: #419980;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'hkgrotesk', 'work sans';
+    padding: 15px 62px;
+    display: inline-block;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 4vw;
+}
+
+.topnav button:hover{
+    background-color: #fff;
+    color: #419980;
+    }
     
     h1{
     	font-family: 'hkgrotesk-semibold', 'work sans semibold';
@@ -432,6 +434,10 @@ main{
 
 @media (max-width: 40em)
 {
+    .topnav {
+        display: none;
+    }
+
     h1{
         font-family: 'hkgrotesk-medium', 'work sans medium';
         font-size: 60px;
@@ -460,7 +466,7 @@ main{
 
     main{
         display: grid;
-        grid-template-columns: 5vw auto 5vw;
+        grid-template-columns: 5vw 1fr 5vw;
         grid-template-rows: repeat (11, auto);
         
     }
