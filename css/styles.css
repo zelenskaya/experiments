@@ -201,11 +201,11 @@ main{
     color: #fff;
 }
 
-.second_scroll_txt h2{
+.second_scroll_txt h2, .third_scroll_txt h2{
         color: #419980;
 }
 
-.second_scroll_txt .txt{
+.second_scroll_txt, .third_scroll_txt .txt{
     color: #3A3B3F;
 }
 
@@ -223,7 +223,7 @@ main{
     z-index: -1;
 }
 
-.second_scroll_photo img{
+.second_scroll_photo img, .third_scroll_photo img{
     width:100%;
     object-fit:cover;
 }
@@ -234,16 +234,34 @@ main{
     align-items:center;
     z-index:2;
 }
-.second_scroll_txt button{
+
+.second_scroll_txt button, .third_scroll_txt button {
     background-color: #419980;
     color:#fff;
 }
 
-.second_scroll button:hover {
+.second_scroll_txt button:hover, .third_scroll_txt button:hover {
     background-color: #fff;
     border: 1px solid #419980;
     color: #419980;
 }
+
+.txt_larger{
+        font-family: 'hkgrotesk', 'work sans';
+        font-size: 20px;
+        line-height: 28px;
+     }
+
+.third_scroll_laptop img{
+        object-fit: contain;
+        z-index: 2;
+    } 
+
+.third_scroll_txt{
+        display: flex;
+        flex-direction: column;
+
+}    
 
 @media (min-width: 40em)
 {
@@ -261,16 +279,12 @@ main{
     }
 
 
-    .txt_larger{
-        font-family: 'hkgrotesk', 'work sans';
-        font-size: 20px;
-        line-height: 28px;
-     }
+    
 
 
     main{
         grid-template-columns: 4vw repeat(12,1fr) 4vw;
-        grid-template-rows: 20vh 20vh repeat (5, 1fr);
+        grid-template-rows: 20vh 20vh repeat (5, auto);
     }
 
     .first_scroll_bg_img{
@@ -325,28 +339,43 @@ main{
         grid-area: 6 / 2 / 7 / 5;
     }
 
-    .second_scroll_txt h2{
+    .second_scroll_txt h2, .third_scroll_txt h2{
         padding-top: 1.5rem;;
     }
 
-    .second_scroll_txt .txt{
+    .second_scroll_txt .txt, .third_scroll_txt .txt{
         padding-top: 1rem;
     }
 
-    .second_scroll_txt button{
-    margin-top: 1rem;
-}
+    .second_scroll_txt button, .third_scroll_txt button {
+        margin-top: 1rem;
+    }
 
     .second_scroll_iphone{
         grid-area: 5 / 8 / 8 / 14;
     }
 
     .second_scroll_photo{
-        grid-area: 6 / 5 / 7 / 13;
+        grid-area: 6 / 5 / 7 / 14;
     }
 
     .second_scroll_photo img{
         height: 30vh;
+    }
+
+    .third_scroll_laptop{
+        grid-area: 8 / 10 / 11 / 15;
+        display: flex;
+    }
+
+    .third_scroll_photo{
+        grid-area: 9 / 5 / 10 / 14;
+    }
+
+    
+
+    .third_scroll_txt{
+        grid-area: 9 / 2 / 10 / 5;
     }
 }
 
