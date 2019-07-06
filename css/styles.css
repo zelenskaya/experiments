@@ -460,13 +460,13 @@ main{
 
     main{
         display: grid;
-        grid-template-columns: 5vw 90vw 5vw;
+        grid-template-columns: 5vw auto 5vw;
         grid-template-rows: repeat (11, auto);
         
     }
 
     .first_scroll_bg_img{
-        grid-area: 1 / 1 / 8 / 4;
+        grid-area: 1 / 1 / 3 / 4;
     }
 
     .first_scroll_bg_img img{
