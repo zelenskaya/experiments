@@ -1,0 +1,26 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Work Sans;
+	font-size: 16px;
+	line-height: 1.5;
+	background: red;
+	color: white;
+}
+
+ul{
+	list-style-type: none;
+	display: block;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+	color:white;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0;
+	margin-inline-end:0;
+
+}

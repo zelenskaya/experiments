@@ -145,6 +145,66 @@
     
 }
 
+body{
+    font-family: 'hkgrotesk', 'work sans';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+    /*.topnav {
+      background-color: #419980;
+      overflow: hidden;
+      height: 8vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+    }
+
+.topnav a{
+    color: #d0f2e8;
+    font-family: 'hkgrotesk-light', 'work sans light';
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration:none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+}
+
+.topnav a:hover{
+    color: #fff;
+}
+
+.topnav button{
+    background-color: #419980;
+    border: 1px solid #fff;
+    color: #fff;
+    font-family: 'hkgrotesk', 'work sans';
+    
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 4vw;
+}
+
+.topnav button:hover{
+    background-color: #fff;
+    color: #419980;
+    }*/
+
+    
+
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    background-color:#419980;
+    display:block;
+}
+
 
 
  .first_scroll_icon_txt article{
@@ -174,7 +234,7 @@
             border-radius: 25px;
             font-size: 14px;
             line-height: 22px;
-            ;
+            
 }
 
 
@@ -269,48 +329,6 @@ main{
 @media (min-width: 40em)
 {
 
-    .topnav {
-  background-color: #419980;
-  overflow: hidden;
-  height: 8vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-}
-
-.topnav a{
-    color: #d0f2e8;
-    font-family: 'hkgrotesk-light', 'work sans light';
-    font-size: 14px;
-    line-height: 22px;
-    text-decoration:none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-
-
-}
-
-.topnav a:hover{
-    color: #fff;
-}
-
-.topnav button{
-    background-color: #419980;
-    border: 1px solid #fff;
-    color: #fff;
-    font-family: 'hkgrotesk', 'work sans';
-    
-    font-size: 14px;
-    line-height: 22px;
-    margin-right: 4vw;
-}
-
-.topnav button:hover{
-    background-color: #fff;
-    color: #419980;
-    }
-    
     h1{
     	font-family: 'hkgrotesk-semibold', 'work sans semibold';
     	font-size: 80px;
