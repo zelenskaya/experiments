@@ -8,19 +8,31 @@ body{
 	line-height: 1.5;
 	background: red;
 	color: white;
+	padding:0;
 }
 
-ul{
-	list-style-type: none;
-	display: block;
-	margin:0;
-	padding:0;
-	overflow: hidden;
-	background-color: #333;
-	color:white;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0;
-	margin-inline-end:0;
 
+.logo{
+	float: right;
+	margin-right: 50px;
+	margin-top:5px;
+	width: 50px;
+}
+
+.menuitem{
+	float: left;
+	padding-left: 50px;
+	padding-top: 18px;
+
+}
+
+
+.topnav{
+	background-color: #333;
+	height: 60px;
+	width: 100%;
+	margin-block-start:0;
+	margin-block-end:0;
+	margin-inline-start:0;
+	margin-inline-end:0;
 }

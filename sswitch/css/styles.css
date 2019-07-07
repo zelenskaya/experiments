@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'space_monobold';
+    src: url('spacemono-bold-webfont.woff2') format('woff2'),
+         url('spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monobold_italic';
+    src: url('spacemono-bolditalic-webfont.woff2') format('woff2'),
+         url('spacemono-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoitalic';
+    src: url('spacemono-italic-webfont.woff2') format('woff2'),
+         url('spacemono-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('spacemono-regular-webfont.woff2') format('woff2'),
+         url('spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'space_groteskbold';
+    src: url('spacegrotesk-bold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('spacegrotesk-light-webfont.woff2') format('woff2'),
+         url('spacegrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskmedium';
+    src: url('spacegrotesk-medium-webfont.woff2') format('woff2'),
+         url('spacegrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskregular';
+    src: url('spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('spacegrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesksemibold';
+    src: url('spacegrotesk-semibold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+		font-family:'space_groteskregular', IBM Plex Sans, sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		background-color: #111;
+		color: #fff;
+		padding:0;
+		margin:0;
+	}
+
+h1{
+		font-family:'space_grotesksemibold', IBM Plex Sans Semibold, sans-serif;
+		text-transform:uppercase;
+	}
+
+@media screen and (min-width: 1024px){
+	body{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	h1{
+		font-size: 108px;
+		line-height: 1;
+
+	}
+
+	main{
+		display:grid;
+		grid-template-columns: 5vw repeat(12,1fr) 5vw;
+		grid-template-rows: 90px 1fr 1fr 1fr;
+	}
+
+	#title_screen_txt{
+		grid-area: 2 / 2 / 4 / 12;
+		padding-top: 1vh;
+		z-index:1;
+		background: #000;
+	}
+
+	#title_screen_txt p{
+		font-family:'space_monoregular', IBM Plex Mono, sans-serif; 
+		font-size: 24px;
+		color:#fff;
+	}
+
+	#title_screen_figure{
+		grid-area: 2 / 2 / 5 / 14;
+		justify-self: center;
+		align-self: end;
+		z-index:2
+	}
+
+	#title_screen_photo_bg{
+		grid-area: 3 / 1 / 5 / 15;
+		z-index:-1;
+	}
+
+	.figure{
+		object-fit:contain;
+		max-width: 70vw;
+	}
+
+	.bg{
+		object-fit:cover;
+		width:100%;
+	}
+
+	#title_screen_black_bg{
+		grid-area: 2 / 1 / 4 / 12;
+		background: #000;
+
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px){
+	body{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	h1{
+		font-size: 85px;
+		line-height: 1;
+	}
+
+	main{
+		display:grid;
+		grid-template-columns: 3vw repeat(8,1fr) 3vw;
+		grid-template-rows: 90px 1fr 1fr 1fr;
+		grid-gap: 1em;
+	}
+
+	#title_screen_txt{
+		grid-area: 2 / 2 / 4 / 9;
+		padding-top: 1vh;
+		z-index:1;
+	}
+
+	#title_screen_txt p{
+		font-family:'space_monoregular', IBM Plex Mono, sans-serif; 
+		font-size: 16px;
+		color:#fff;
+	}
+
+	#title_screen_figure{
+		grid-area: 2 / 3 / 5 / 10;
+		justify-self: center;
+		align-self: end;
+		z-index:2
+	}
+
+	#title_screen_photo_bg{
+		grid-area: 3 / 1 / 5 / 11;
+		z-index:-1;
+	}
+
+	.figure{
+		object-fit:contain;
+		max-width: 70vw;
+	}
+
+	.bg{
+		object-fit:cover;
+		width:100%;
+	}
+
+	#title_screen_black_bg{
+		grid-area: 2 / 1 / 4 / 9;
+		background: #000;
+
+	}
+}
