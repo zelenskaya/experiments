@@ -121,42 +121,95 @@ h1{
 	}
 
 
+.monospace{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	text-transform:lowercase;
+	font-size: 44px;
+	font-weight: 400;
+}
 
+.nav_active{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-weight: 400;
+	color:#fff;
+	text-decoration: none;
 
-	main{
-		
-		margin: 0;
+}
 
-	}
+.nav_default{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-size: 16px;
+	font-weight: 400;
+	color:#ccc;
+	text-decoration: none;
+
+}
+main{
 	
-	
+	margin: 0;
+	;
+
+}
+
+.navbar-ul{
+	list-style:none;
+	margin-top: 3vh;
+	padding:0;
+	display:flex;
+	justify-content: flex-end;
+}
+
+.navbar-ul li{
+	margin: 0 30px;
+}
 
 
-
-
-	body{
-		font-size: 16px;
-		line-height: 1.5;
-	}
-
-	h1{
-		font-size: 108px;
-		line-height: 1;
-
-	}
-
-	main{
-		
-	}
-	
-	
-
-	#title_screen{
+#title_screen{
 		background-image: url(media/title_screen_bg.jpg);
-		background-color: #000;
-		height:600px;
+		background-repeat: no-repeat;
+		background-color:#000;
+		margin-top:30vh;
+		padding-top:10vh;
+		position: relative;
+		background-size: cover;
+		height: 70vh;
+		
+		
 	}
+
+
+
+body{
+	font-size: 16px;
+	line-height: 1.5;
+	background:#000;
+}
+
+h1{
+	font-size: 144px;
+	line-height: 1;
+
+}
+
+#title_screen .figure{
+	position: absolute;
+	bottom:-2px;
+	left: 50%;
+	width:70%;
+	margin-left:-400px;
 	
+}
+
+
+
+#title_screen_txt_wrapper{
+	background-color:#000;
+	margin-top: -30vh;
+	padding: 2vh 2.4vw;
+	width: 70vw;
+	z-index:1;
+}
+
 
 	
 	
