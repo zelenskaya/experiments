@@ -1,0 +1,17 @@
+body {
+  width: 500px;
+  height: 1400px;
+  margin: 0 auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+dt {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: 1em 0;
+}

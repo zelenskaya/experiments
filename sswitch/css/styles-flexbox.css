@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'space_monobold';
+    src: url('spacemono-bold-webfont.woff2') format('woff2'),
+         url('spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monobold_italic';
+    src: url('spacemono-bolditalic-webfont.woff2') format('woff2'),
+         url('spacemono-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoitalic';
+    src: url('spacemono-italic-webfont.woff2') format('woff2'),
+         url('spacemono-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('spacemono-regular-webfont.woff2') format('woff2'),
+         url('spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'space_groteskbold';
+    src: url('spacegrotesk-bold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('spacegrotesk-light-webfont.woff2') format('woff2'),
+         url('spacegrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskmedium';
+    src: url('spacegrotesk-medium-webfont.woff2') format('woff2'),
+         url('spacegrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskregular';
+    src: url('spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('spacegrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesksemibold';
+    src: url('spacegrotesk-semibold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+		font-family:'space_groteskregular', IBM Plex Sans, sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		background-color: #111;
+		color: #fff;
+		padding:0;
+		margin:0;
+	}
+
+h1{
+		font-family:'space_grotesksemibold', IBM Plex Sans Semibold, sans-serif;
+		text-transform:uppercase;
+	}
+
+
+
+
+	main{
+		
+		margin: 0;
+
+	}
+	
+	
+
+
+
+
+	body{
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	h1{
+		font-size: 108px;
+		line-height: 1;
+
+	}
+
+	main{
+		
+	}
+	
+	
+
+	#title_screen{
+		background-image: url(media/title_screen_bg.jpg);
+		background-color: #000;
+	}
+	
+
+	
+	
+	
+
