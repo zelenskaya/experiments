@@ -120,62 +120,30 @@ h1{
 		text-transform:uppercase;
 	}
 
-.menuitem{
-	font-family:'space_monoregular', IBM Plex Mono, sans-serif; 
-	font-size: 16px;
-	line-height: 1.5;
-	float: right;
-	margin-right: 32px;
+header {
+  background: #000;
+}
+
+nav {
+  display: flex;
+ 
+}
+
+.menu {
+  margin-left: auto;
+  display: flex;
+}
+
+.menu_item{
+	margin: 30px 20px;
 
 }
 
-.menuitem a{
-	color: #fff;
+a{
+	color:#fff;
 	text-decoration: none;
-
 }
 
-.topnav{
-	position:fixed;
-	top:0;
-}
-
-#menuitem{
-	display:inline;
-	margin 0 auto;
-}
-
-/*no css grid support:*/
-
-main{
-	max-width: 800px;
-	margin: 0 auto;
-}
-
-h1{
-		font-size: 68px;
-		line-height: 1;
-}
-
-#title_screen_figure img{
-		width: 90%;
-}
-
-#title_screen_photo_bg img{
-	width: 0%;
-}
-
-@supports (display:grid){
-
-	main{
-		max-width: 10000px;
-		margin: 0;
-
-	}
-	
-	#title_screen_photo_bg img{
-		width:100%;
-	}
 
 @media screen and (max-width: 720px){
 	.topnav{

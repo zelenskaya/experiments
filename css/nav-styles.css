@@ -1,40 +1,30 @@
-*{
-	box-sizing: border-box;
+header {
+  background: #333;
 }
 
-body{
-	font-family: Work Sans;
-	font-size: 16px;
-	line-height: 1.5;
-	background: red;
-	color: white;
-	padding:0;
+nav {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-p{
-	margin-left:60px;
+.menu {
+  margin-left: 60px;
+  margin-right: auto;
 }
 
-
-.logo{
-	float: left;
-	margin-left: 60px;
-	margin-top:5px;
-	width: 50px;
-}
-
-.menuitem{
-	float: right;
-	margin-right: 40px;
-	margin-top: 18px;
-
-}
-
-
-.topnav{
-	background-color: #333;
-	height: 60px;
-	width: 100%;
-	margin-right:20px;
+ul{
 	
+	list-style: none;
+}
+
+a{
+	color:#fff;
+	text-decoration:none;
+}
+
+li{
+	display: list-item;
 }
