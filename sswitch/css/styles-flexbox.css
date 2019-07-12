@@ -120,6 +120,12 @@ h1{
 		text-transform:uppercase;
 	}
 
+.tag{
+	font-family:'space_grotesklight', IBM Plex Sans Light, sans-serif;
+	text-transform:uppercase;
+	font-size:12px;
+	line-height:100%;
+}
 
 .monospace{
 	font-family:'space_monoregular', IBM Plex Mono, monospace; 
@@ -128,22 +134,6 @@ h1{
 	font-weight: 400;
 }
 
-.nav_active{
-	font-family:'space_monoregular', IBM Plex Mono, monospace; 
-	font-weight: 400;
-	color:#fff;
-	text-decoration: none;
-
-}
-
-.nav_default{
-	font-family:'space_monoregular', IBM Plex Mono, monospace; 
-	font-size: 16px;
-	font-weight: 400;
-	color:#ccc;
-	text-decoration: none;
-
-}
 main{
 	
 	margin: 0;
@@ -166,18 +156,37 @@ nav {
 
 .menu_item{
 	margin: 30px 20px;
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-size: 16px;
+	font-weight: 400;
+	color:#ccc;
+	text-decoration: none;
 
 }
 
 a{
-	color:#fff;
+	color:#ccc;
 	text-decoration: none;
+
 }
 
+a:hover{
+	color:#fff;
+}
+
+ul{
+	list-style: none;
+	padding-left:0;
+}
+
+li{
+	padding:10px;
+}
 
 #title_screen{
 	display: flex;
 	flex-direction: column;
+	position:relative;
 	}
 
 
@@ -194,14 +203,22 @@ h1{
 
 }
 
+h2{
+	font-size:18px;
+	line-height:145%; 
+	text-transform: uppercase;
+}
+
 #title_screen .figure{
 	z-index: 2;
 	height:85vh;
-	margin-top: 30vh;
-	margin-left:34vw;
+	
 	object-fit: contain;
 	flex-shrink:0;
 	margin-bottom:auto;
+	position:absolute;
+	left:34vh;
+	top:18vw;
 }
 
 
@@ -210,9 +227,12 @@ h1{
 	display:flex;
 	flex-direction:column;
 	background:#000;
+	width:67vw;
 	z-index: 1;
 	margin-top:4vh;
 	margin-bottom:auto;
+	position:absolute;
+
 }
 
 
@@ -225,9 +245,63 @@ h1{
 
 #title_screen .bg{
 	z-index:0;
+	height:67vh;
+	width:100%;
+	object-fit:cover;
+	position: absolute;
+	top:32vh;
+
 }
 
-	
-	
-	
+.txt_on_blue{
+	background:#4566F9;
+}	
+
+.txt_on_blue{
+	background:#27253D;
+}	
+
+.dotted_line{
+	width:100%;
+}
+
+
+#education ul{
+	list-style-image:url(media/chevron-right.svg);
+}
+
+#education ul li p{
+	float:left;
+}
+
+
+
+
+
+
+
+
+.solid_line{
+	height:6px;
+	background-color:#fff;
+	flex: 1 1 50vw;
+}	
+
+.tab_lines{
+	display:flex;
+}	
+
+.dotted_line{
+	flex: 1 1 50vw;
+	object-fit:cover;
+}
+
+.active{
+	color:#fff;
+}
+
+.default{
+	color:#808080;
+}
+
 

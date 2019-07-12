@@ -1,0 +1,25 @@
+body{
+	background: #000;
+}
+
+p{
+	color:#fff;
+	font-family: Work Sans, sans-serif;
+	font-size:16px;
+}
+
+.tab_lines{
+	display:flex;
+}
+
+
+.solid_line{
+	height:6px;
+	background-color:#fff;
+	flex: 1 1 50vw;
+}	
+
+.dotted_line{
+	flex: 1 1 50vw;
+	object-fit:cover;
+}
