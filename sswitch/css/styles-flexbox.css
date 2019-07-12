@@ -186,7 +186,6 @@ li{
 #title_screen{
 	display: flex;
 	flex-direction: column;
-	position:relative;
 	}
 
 
@@ -218,7 +217,7 @@ h2{
 	margin-bottom:auto;
 	position:absolute;
 	left:34vh;
-	top:18vw;
+	bottom:0vh;
 }
 
 
@@ -250,7 +249,7 @@ h2{
 	width:100%;
 	object-fit:cover;
 	position: absolute;
-	top:32vh;
+	bottom:0vh;
 
 }
 
