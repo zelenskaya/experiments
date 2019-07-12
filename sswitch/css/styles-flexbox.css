@@ -211,6 +211,11 @@ h2{
 	text-transform: uppercase;
 }
 
+.accent{
+	font-size:26px;
+	line-height:165%;
+}
+
 #title_screen .figure{
 	z-index: 2;
 	height:85vh;
@@ -253,6 +258,7 @@ h2{
 
 #who_we_are{
 	position:relative;
+	height:1100px;
 	
 }
 
@@ -344,8 +350,6 @@ h2{
 #what_we_do .txt_on_blue p{
 	position:absolute;
 	top:14vh;
-	font-size:26px;
-	line-height:165%;
 	width:70vw;
 }
 
