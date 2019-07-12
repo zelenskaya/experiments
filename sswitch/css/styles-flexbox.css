@@ -184,8 +184,9 @@ li{
 }
 
 #title_screen{
-	display: flex;
-	flex-direction: column;
+	height:1100px;
+
+
 	}
 
 
@@ -211,10 +212,7 @@ h2{
 #title_screen .figure{
 	z-index: 2;
 	height:85vh;
-	
 	object-fit: contain;
-	flex-shrink:0;
-	margin-bottom:auto;
 	position:absolute;
 	left:34vh;
 	bottom:0vh;
@@ -231,8 +229,6 @@ h2{
 	margin-top:4vh;
 	padding-left:2vw;
 	margin-bottom:auto;
-	position:absolute;
-
 }
 
 
@@ -244,7 +240,7 @@ h2{
 	flex: 0 0 10vh;}
 
 #title_screen .bg{
-	z-index:0;
+	z-index:-1;
 	height:67vh;
 	width:100%;
 	object-fit:cover;
