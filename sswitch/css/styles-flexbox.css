@@ -139,6 +139,15 @@ h1{
 	text-align:center;
 }
 
+
+.active{
+	color:#fff;
+}
+
+.default{
+	color:#808080;
+}
+
 main{
 	margin: 0;
 }
@@ -184,13 +193,27 @@ ul{
 
 
 
+.lists li p{
+	display:inline;
+	padding-left:24px;
+	
+}
+
+.lists li .icon{
+	position:relative;
+}
+
+.lists li .icon img{
+	position:absolute;
+	top:2px;
+}
+
+
 #title_screen{
 	height:1100px;
 	position:relative;
 
 	}
-
-
 
 body{
 	font-size: 16px;
@@ -382,31 +405,19 @@ h2{
 
 #what_we_do #txt_on_grey_2{
 	top:896px;
-	right:2vh;
+	right:2vw;
 	display:flex;
 	flex-direction:column;
 }
 
-#what_we_do .txt_on_grey ul li{
+#what_we_do .txt_on_grey .lists li{
 	padding-left:16px;
 	padding-right:16px;
 	
 }
 
-#what_we_do .txt_on_grey ul li p{
-	display:inline;
-	padding-left:24px;
-	
-}
 
-#what_we_do .txt_on_grey ul li .icon{
-	position:relative;
-}
 
-#what_we_do .txt_on_grey ul li .icon img{
-	position:absolute;
-	top:2px;
-}
 
 .dotted_line{
 	width:24vw;
@@ -415,13 +426,21 @@ h2{
 
 }
 
-
-
 .dotted_line_via_bg{
 	background:url(media/dotted_line.svg);
 	background-repeat:no-repeat;
 	background-position:left center;
 	height:1px;
+	background-size:cover;
+	margin-top:16px;
+	margin-bottom:16px;
+}
+
+.dotted_line_via_bg_2px{
+	background:url(media/dotted_line_2px.svg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	height:2px;
 	background-size:cover;
 	margin-top:16px;
 	margin-bottom:16px;
@@ -445,16 +464,67 @@ h2{
     background-color:transparent;
 }
 
+#technology{
+	height:1072px;
+	width:60vw;
+	margin-left:auto;
+	margin-right:auto;
 
+	
 
-
-
-.active{
-	color:#fff;
 }
 
-.default{
-	color:#808080;
+
+
+
+#technology .tabs{
+	
+	display:flex;
+	
 }
 
+#left_tab, #right_tab{
+	flex: 1 1 30vw;
+	display:flex;
+	flex-direction:column;
+}
 
+#left_tab #left_tab_title, #left_tab #left_tab_subtitle, #right_tab #right_tab_title, #right_tab #right_tab_subtitle {
+	align-self:center;
+}
+
+#left_tab #left_tab_subtitle, #right_tab #right_tab_subtitle {
+	padding-bottom:12px;
+	margin-top:-4px;
+}
+
+#left_tab .solid_line{
+	background-color: #fff;
+	flex: 0 0 6px;
+	align-self:stretch;
+}
+
+.dotted_line img{
+	margin-bottom:13px;
+}
+
+#right_tab .dotted_line_via_bg_2px{
+	margin-top:2px;
+}
+
+#mockups{
+	align-self:center;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#mockups img{
+	width:16vw;
+	object-fit:contain;
+
+}
+
+#app_store_badge{
+	align-self:flex-start;
+	
+}
