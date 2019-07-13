@@ -181,9 +181,7 @@ ul{
 	padding-left:0;
 }
 
-li{
-	padding:10px;
-}
+
 
 #title_screen{
 	height:1100px;
@@ -214,6 +212,12 @@ h2{
 .accent{
 	font-size:26px;
 	line-height:165%;
+}
+
+.txt_mono{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-size: 16px;
+	line-height:185%;
 }
 
 #title_screen .figure{
@@ -366,25 +370,34 @@ h2{
 	bottom:10vh;
 	right:30vh;
 	background:#27253D;
+	width:30vw;
+}
+
+#what_we_do .txt_on_grey ul li{
+	padding-left:1vw;
+	padding-right:1vw;
+	
+}
+
+#what_we_do .txt_on_grey ul li p{
+	display:inline;
+	padding-left:24px;
+	
+}
+
+#what_we_do .txt_on_grey ul li .icon{
+	position:relative;
+}
+
+#what_we_do .txt_on_grey ul li .icon img{
+	position:absolute;
+	top:2px;
 }
 
 .dotted_line{
-	width:100%;
+	object-fit: cover;
+	width:30vw;
 }
-
-
-#education ul{
-	list-style-image:url(media/chevron-right.svg);
-}
-
-#education ul li p{
-	float:left;
-}
-
-
-
-
-
 
 
 
@@ -399,9 +412,10 @@ h2{
 }	
 
 .dotted_line{
-	flex: 1 1 50vw;
-	object-fit:cover;
+
 }
+
+
 
 .active{
 	color:#fff;
