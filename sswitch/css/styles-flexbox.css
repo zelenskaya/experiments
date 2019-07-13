@@ -137,8 +137,7 @@ h1{
 main{
 	
 	margin: 0;
-	display:flex;
-	flex-direction:column;
+	
 
 }
 
@@ -371,11 +370,13 @@ h2{
 	right:30vh;
 	background:#27253D;
 	width:30vw;
+	padding-bottom:16px;
+	padding-top:16px;
 }
 
 #what_we_do .txt_on_grey ul li{
-	padding-left:1vw;
-	padding-right:1vw;
+	padding-left:16px;
+	padding-right:16px;
 	
 }
 
@@ -395,9 +396,26 @@ h2{
 }
 
 .dotted_line{
-	object-fit: cover;
 	width:30vw;
+	height:1px;
+	object-fit: cover;
+
 }
+
+
+
+.dotted_line_via_bg{
+	background:url(media/dotted_line.svg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	height:1px;
+	background-size:cover;
+	margin-top:16px;
+	margin-bottom:16px;
+
+
+}
+
 
 
 
