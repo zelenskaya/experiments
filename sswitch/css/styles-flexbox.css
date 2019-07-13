@@ -361,7 +361,12 @@ h2{
 	left:0;
 }
 
-
+#what_we_do .txt_on_grey{
+	position:absolute;
+	bottom:10vh;
+	right:30vh;
+	background:#27253D;
+}
 
 .dotted_line{
 	width:100%;
