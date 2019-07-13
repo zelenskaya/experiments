@@ -134,11 +134,13 @@ h1{
 	font-weight: 400;
 }
 
-main{
-	
-	margin: 0;
-	
 
+.centered{
+	text-align:center;
+}
+
+main{
+	margin: 0;
 }
 
 header {
@@ -321,9 +323,12 @@ h2{
 #what_we_do_txt_wrapper{
 	position:relative;
 	left:2vw;
-	top:40vh;
+	top:542px;
 	z-index:2;
+	width:54vw;
 }
+
+
 
 #what_we_do{
 	position:relative;
@@ -331,14 +336,13 @@ h2{
 	width:100%;
 	padding:0;
 	margin:0;
-	height:90vh;
-	height:1200px;
+	height:1750px;
 }
 
 #what_we_do .bg{
 	position:absolute;
 	top:0;
-	height:60vh;
+	height:612px;
 	width:100%;
 	background:url("media/what_we_do_bg.jpg");
 	background-repeat: no-repeat;
@@ -352,26 +356,37 @@ h2{
 
 #what_we_do .txt_on_blue p{
 	position:absolute;
-	top:14vh;
-	width:70vw;
+	top:120px;
 }
 
 #what_we_do .photo{
 	width:60vw;
 	position:absolute;
 	z-index:1;
-	top:87vh;
+	top:906px;
 	left:0;
 }
 
 #what_we_do .txt_on_grey{
 	position:absolute;
-	bottom:10vh;
-	right:30vh;
 	background:#27253D;
-	width:30vw;
+	width:20vw;
 	padding-bottom:16px;
 	padding-top:16px;
+	z-index:2;
+
+}
+
+#what_we_do #txt_on_grey_1{
+	top:836px;
+	right:23vw;
+}
+
+#what_we_do #txt_on_grey_2{
+	top:896px;
+	right:2vh;
+	display:flex;
+	flex-direction:column;
 }
 
 #what_we_do .txt_on_grey ul li{
@@ -396,7 +411,7 @@ h2{
 }
 
 .dotted_line{
-	width:30vw;
+	width:24vw;
 	height:1px;
 	object-fit: cover;
 
@@ -412,26 +427,27 @@ h2{
 	background-size:cover;
 	margin-top:16px;
 	margin-bottom:16px;
+}
 
+#CTA_txt, #CTA_btn{
+	margin:16px;
+	align-self:center;
+}
 
+#CTA_btn{
+	margin-top:-16px;
+	border:1px solid #fff;
+	line-height: 2.5;
+    padding: 0 48px;
+    font-family:'space_groteskregular', IBM Plex Sans, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color:transparent;
 }
 
 
-
-
-.solid_line{
-	height:6px;
-	background-color:#fff;
-	flex: 1 1 50vw;
-}	
-
-.tab_lines{
-	display:flex;
-}	
-
-.dotted_line{
-
-}
 
 
 
