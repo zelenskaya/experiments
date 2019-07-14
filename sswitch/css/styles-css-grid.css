@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'space_monobold';
+    src: url('spacemono-bold-webfont.woff2') format('woff2'),
+         url('spacemono-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monobold_italic';
+    src: url('spacemono-bolditalic-webfont.woff2') format('woff2'),
+         url('spacemono-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoitalic';
+    src: url('spacemono-italic-webfont.woff2') format('woff2'),
+         url('spacemono-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('spacemono-regular-webfont.woff2') format('woff2'),
+         url('spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'space_groteskbold';
+    src: url('spacegrotesk-bold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesklight';
+    src: url('spacegrotesk-light-webfont.woff2') format('woff2'),
+         url('spacegrotesk-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskmedium';
+    src: url('spacegrotesk-medium-webfont.woff2') format('woff2'),
+         url('spacegrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_groteskregular';
+    src: url('spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('spacegrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_grotesksemibold';
+    src: url('spacegrotesk-semibold-webfont.woff2') format('woff2'),
+         url('spacegrotesk-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+		font-family:'space_groteskregular', IBM Plex Sans, sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		background-color: #111;
+		color: #fff;
+		padding:0;
+		margin:0;
+	}
+
+h1{
+	font-family:'space_grotesksemibold', IBM Plex Sans Semibold, sans-serif;
+	text-transform:uppercase;
+  }
+
+.tag{
+	font-family:'space_grotesklight', IBM Plex Sans Light, sans-serif;
+	text-transform:uppercase;
+	font-size:12px;
+	line-height:100%;
+}
+
+.monospace{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	text-transform:lowercase;
+	font-size: 44px;
+	font-weight: 400;
+}
+
+
+.centered{
+	text-align:center;
+}
+
+
+.active{
+	color:#fff;
+}
+
+.default{
+	color:#808080;
+}
+
+main{
+	margin: 0;
+	display:grid;
+	grid-template-columns: 2vw repeat(12,1fr) 2vw;
+	grid-template-rows: 40vh 20vh 70vh;
+}
+
+header {
+  background: #000;
+}
+
+nav {
+	
+  	display: flex;
+  }
+
+.menu {
+  margin-left: auto;
+  display: flex;
+}
+
+.menu_item{
+	margin: 30px 20px;
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-size: 16px;
+	font-weight: 400;
+	color:#ccc;
+	text-decoration: none;
+
+}
+
+a{
+	color:#ccc;
+	text-decoration: none;
+
+}
+
+a:hover{
+	color:#fff;
+}
+
+ul{
+	list-style: none;
+	padding-left:0;
+}
+
+
+
+.lists li p{
+	display:inline;
+	padding-left:24px;
+	
+}
+
+.lists li .icon{
+	position:relative;
+}
+
+.lists li .icon img{
+	position:absolute;
+	top:2px;
+}
+
+
+
+
+body{
+	font-size: 16px;
+	line-height: 1.5;
+	background:#000;
+}
+
+h1{
+	font-size: 144px;
+	line-height: 1;
+
+}
+
+h2{
+	font-size:18px;
+	line-height:145%; 
+	text-transform: uppercase;
+}
+
+.accent{
+	font-size:26px;
+	line-height:165%;
+}
+
+.txt_mono{
+	font-family:'space_monoregular', IBM Plex Mono, monospace; 
+	font-size: 16px;
+	line-height:185%;
+}
+
+
+
+
+
+
+#title_screen_figure{
+	object-fit: contain;
+	margin-top:auto;
+	max-height:73vh;
+	z-index: 2;
+	grid-area: 1 / 5 / 4 / 12;
+	
+}
+
+#title_screen_txt_wrapper{
+	background:#000;
+	z-index: 1;
+	grid-area: 1 / 1 / 3 / 12;
+	
+}
+
+
+#title_screen_txt_wrapper h1{
+	margin-top:-24px;
+	margin-bottom:40px;
+}
+
+#title_screen_bg{
+	z-index:-1;
+	object-fit:cover;
+	width:100%;
+	height:70vh;
+
+	grid-area: 2 / 1 / 4 / 15;
+}
+
+/*
+#who_we_are{
+	position:relative;
+	height:870px;
+}
+
+#who_we_are_txt_wrapper{
+	position:absolute;
+	left:60vw;
+	bottom:0;
+}
+
+#who_we_are_txt_wrapper h1{
+	padding-top:2vw;
+	padding-bottom:2vh;
+	
+	
+}
+
+#who_we_are .txt_on_blue{
+	background:#4566F9;
+	padding-left:24px;
+	padding-right:24px;
+	padding-top:4px;
+	padding-bottom:4px;
+	width:40vw;
+	background:#4566F9;
+	margin-top:-102px;
+}	
+
+#who_we_are .bg{
+	z-index:-1;
+	height:408px;
+	width:100vw;
+	object-fit:cover;
+	position: absolute;
+	bottom:7vh;
+}
+
+#images_wrapper{
+	position: absolute;
+	bottom:20vh;
+	left:2vw;
+}
+
+#who_we_are .device{
+	z-index:2;
+	margin-left:2vw;
+	object-fit:contain;
+	width:16vw;
+	bottom:0;
+}
+	
+#who_we_are .figure{
+	z-index: 1;
+	object-fit:contain;
+	position: absolute;
+	bottom:7vh;
+	left:18vw;
+}	
+
+
+
+#what_we_do_txt_wrapper{
+	position:relative;
+	left:2vw;
+	top:542px;
+	z-index:2;
+	width:54vw;
+}
+
+
+
+#what_we_do{
+	position:relative;
+	background-color:#4566F9;
+	width:100%;
+	padding:0;
+	margin:0;
+	height:1750px;
+}
+
+#what_we_do .bg{
+	position:absolute;
+	top:0;
+	height:612px;
+	width:100%;
+	background:url("media/what_we_do_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size:cover;
+	left:0;
+	right:0;
+	z-index:0;
+
+}
+
+#what_we_do .txt_on_blue p{
+	position:absolute;
+	top:120px;
+}
+
+#what_we_do .photo{
+	width:60vw;
+	position:absolute;
+	z-index:1;
+	top:906px;
+	left:0;
+}
+
+#what_we_do .txt_on_grey{
+	position:absolute;
+	background:#27253D;
+	width:20vw;
+	padding-bottom:16px;
+	padding-top:16px;
+	z-index:2;
+
+}
+
+#what_we_do #txt_on_grey_1{
+	top:836px;
+	right:23vw;
+}
+
+#what_we_do #txt_on_grey_2{
+	top:896px;
+	right:2vw;
+	display:flex;
+	flex-direction:column;
+}
+
+#what_we_do .txt_on_grey .lists li{
+	padding-left:16px;
+	padding-right:16px;
+	
+}
+
+
+
+
+.dotted_line{
+	width:24vw;
+	height:1px;
+	object-fit: cover;
+
+}
+
+.dotted_line_via_bg{
+	background:url(media/dotted_line.svg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	height:1px;
+	background-size:cover;
+	margin-top:16px;
+	margin-bottom:16px;
+}
+
+.dotted_line_via_bg_2px{
+	background:url(media/dotted_line_2px.svg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	height:2px;
+	background-size:cover;
+	margin-top:16px;
+	margin-bottom:16px;
+}
+
+#CTA_txt, #CTA_btn{
+	margin:16px;
+	align-self:center;
+}
+
+#CTA_btn{
+	margin-top:-16px;
+	border:1px solid #fff;
+	line-height: 2.5;
+    padding: 0 48px;
+    font-family:'space_groteskregular', IBM Plex Sans, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color:transparent;
+}
+
+#technology{
+	height:1072px;
+	width:60vw;
+	margin-left:auto;
+	margin-right:auto;
+
+	
+
+}
+
+
+
+
+#technology .tabs{
+	
+	display:flex;
+	
+}
+
+#left_tab, #right_tab{
+	flex: 1 1 30vw;
+	display:flex;
+	flex-direction:column;
+}
+
+#left_tab #left_tab_title, #left_tab #left_tab_subtitle, #right_tab #right_tab_title, #right_tab #right_tab_subtitle {
+	align-self:center;
+}
+
+#left_tab #left_tab_subtitle, #right_tab #right_tab_subtitle {
+	padding-bottom:12px;
+	margin-top:-4px;
+}
+
+#left_tab .solid_line{
+	background-color: #fff;
+	flex: 0 0 6px;
+	align-self:stretch;
+}
+
+.dotted_line img{
+	margin-bottom:13px;
+}
+
+#right_tab .dotted_line_via_bg_2px{
+	margin-top:2px;
+}
+
+#mockups{
+	align-self:center;
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+#mockups img{
+	width:16vw;
+	object-fit:contain;
+
+}
+
+#app_store_badge{
+	align-self:flex-start;
+	
+}
+*/
