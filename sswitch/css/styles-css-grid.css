@@ -156,7 +156,7 @@ main{
 	margin: 0;
 	display:grid;
 	grid-template-columns: 2vw repeat(12,1fr) 2vw;
-	grid-template-rows: 40vh 20vh 70vh min-content 50vh min-content 30vh 20vh 70vh;
+	grid-template-rows: 40vh 20vh 70vh min-content 50vh min-content 30vh 20vh 90vh;
 }
 
 header {
@@ -351,110 +351,33 @@ h2{
 	grid-area:9 / 1 / 10 / 9;
 	z-index:-2;
 	object-fit:cover;
-	height:40vh;
+	height:58vh;
 	width:100%;
 	margin-top:auto;
 }
 
 
-/*
-
-
-
-
-#what_we_do_txt_wrapper{
-	position:relative;
-	left:2vw;
-	top:542px;
-	z-index:2;
-	width:54vw;
-}
-
-
-
-#what_we_do{
-	position:relative;
-	background-color:#4566F9;
-	width:100%;
-	padding:0;
-	margin:0;
-	height:1750px;
-}
-
-#what_we_do .bg{
-	position:absolute;
-	top:0;
-	height:612px;
-	width:100%;
-	background:url("media/what_we_do_bg.jpg");
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size:cover;
-	left:0;
-	right:0;
-	z-index:0;
-
-}
-
-#what_we_do .txt_on_blue p{
-	position:absolute;
-	top:120px;
-}
-
-#what_we_do .photo{
-	width:60vw;
-	position:absolute;
-	z-index:1;
-	top:906px;
-	left:0;
-}
-
-#what_we_do .txt_on_grey{
-	position:absolute;
+.txt_on_grey{
 	background:#27253D;
-	width:20vw;
-	padding-bottom:16px;
-	padding-top:16px;
+	width:22vw;
+	padding:16px;
 	z-index:2;
-
-}
-
-#what_we_do #txt_on_grey_1{
-	top:836px;
-	right:23vw;
-}
-
-#what_we_do #txt_on_grey_2{
-	top:896px;
-	right:2vw;
+	margin-left:1vw;
+	margin-right:1vw;
 	display:flex;
 	flex-direction:column;
 }
 
-#what_we_do .txt_on_grey .lists li{
-	padding-left:16px;
-	padding-right:16px;
-	
+#what_we_do_txt_on_grey_1{
+	grid-area: 8 / 8 / 10 / 11;
+	margin-bottom:60px;
+	margin-top:auto;
 }
 
-
-
-
-.dotted_line{
-	width:24vw;
-	height:1px;
-	object-fit: cover;
-
-}
-
-.dotted_line_via_bg{
-	background:url(media/dotted_line.svg);
-	background-repeat:no-repeat;
-	background-position:left center;
-	height:1px;
-	background-size:cover;
-	margin-top:16px;
-	margin-bottom:16px;
+#what_we_do_txt_on_grey_2{
+	grid-area: 8 / 11 / 10 / 14;
+	margin-bottom:20px;
+	margin-top:auto;
 }
 
 .dotted_line_via_bg_2px{
@@ -467,12 +390,12 @@ h2{
 	margin-bottom:16px;
 }
 
-#CTA_txt, #CTA_btn{
+#what_we_do_CTA_txt, #what_we_do_CTA_btn{
 	margin:16px;
 	align-self:center;
 }
 
-#CTA_btn{
+#what_we_do_CTA_btn{
 	margin-top:-16px;
 	border:1px solid #fff;
 	line-height: 2.5;
@@ -484,6 +407,22 @@ h2{
     color: #fff;
     background-color:transparent;
 }
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #technology{
 	height:1072px;
