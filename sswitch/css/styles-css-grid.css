@@ -152,7 +152,7 @@ main{
 	margin: 0;
 	display:grid;
 	grid-template-columns: 2vw repeat(12,1fr) 2vw;
-	grid-template-rows: 40vh 20vh 70vh 70vh 50vh min-content;
+	grid-template-rows: 40vh 20vh 70vh min-content 50vh min-content;
 }
 
 header {
