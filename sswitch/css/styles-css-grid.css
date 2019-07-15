@@ -156,7 +156,7 @@ main{
 	margin: 0;
 	display:grid;
 	grid-template-columns: 2vw repeat(12,1fr) 2vw;
-	grid-template-rows: 40vh 20vh 70vh min-content 50vh min-content 30vh 20vh 90vh;
+	grid-template-rows: 40vh 12vh 70vh min-content 50vh min-content 30vh 20vh 90vh;
 }
 
 header {
@@ -255,7 +255,7 @@ h2{
 #title_screen_figure{
 	object-fit: contain;
 	margin-top:auto;
-	height:73vh;
+	height:79vh;
 	z-index: 2;
 	grid-area: 1 / 5 / 4 / 12;
 	
@@ -280,6 +280,9 @@ h2{
 	z-index:-1;
 	object-fit:cover;
 	width:100%;
+	margin-top:auto;
+	height:82vh;
+	
 	grid-area: 2 / 1 / 4 / 15;
 }
 
