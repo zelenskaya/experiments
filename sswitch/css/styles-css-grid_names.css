@@ -155,8 +155,8 @@ h1{
 main{
 	margin: 0;
 	display:grid;
-	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start] 2vw 3fr[title_screen_figure-end] 5fr [who_we_are_txt_wrapper-start] 1fr [title_screen_figure-end] 1fr [title_screen_txt_wrapper-end] 2fr [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end] 2vw;
-	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start] 16vh 50vh 32px min-content[who_we_are_txt_wrapper-end] 30vh 20vh 90vh 40vh 90vh;
+	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start who_we_are_bg-start] 2vw [who_we_are_device-start ] 2fr[who_we_are_device-end who_we_are_figure-start] 1fr[title_screen_figure-end] 5fr [who_we_are_txt_wrapper-start who_we_are_figure-end] 1fr [title_screen_figure-end] 1fr [title_screen_txt_wrapper-end] 2fr 2vw [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end who_we_are_bg-end] ;
+	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start who_we_are_figure-start] 16vh [who_we_are_device-start who_we_are_bg-start] 50vh 32px [who_we_are_figure-end who_we_are_bg-end] min-content[who_we_are_txt_wrapper-end who_we_are_device-end] 30vh 20vh 90vh 40vh 90vh;
 	/*grid-template-rows: [header] 100px [title_screen_txt_wrapper-start] 40vh [title_screen_txt_wrapper-end] 12vh 70vh 16vh 50vh 32px min-content 30vh 20vh 90vh 40vh 90vh;*/
 }
 
@@ -257,13 +257,13 @@ h2{
 	padding-right:2vw;
 	
 }
-/*
+
 #title_screen_figure{
 	object-fit: contain;
 	margin-top:auto;
 	z-index: 2;
 	grid-area: title_screen_figure;
-}*/
+}
 
 #title_screen_txt_wrapper h1{
 	margin-top:-24px;
@@ -279,7 +279,7 @@ h2{
 	grid-area: title_screen_bg;
 }
 
-/*#who_we_are_txt_wrapper{
+#who_we_are_txt_wrapper{
 	grid-area: who_we_are_txt_wrapper;
 	z-index:0;
 }
@@ -288,10 +288,10 @@ h2{
 	padding:24px;
 	margin-top:-56px;
 	margin-bottom:100px;
-}*/
+}
 
-/*#who_we_are_device{
-	grid-area: 4 / 2 / 7 / 4;
+#who_we_are_device{
+	grid-area: who_we_are_device;
 	object-fit:contain;
 	width:16vw;
 	margin-top:auto;
@@ -299,7 +299,7 @@ h2{
 }
 
 #who_we_are_figure{
-	grid-area: 4 / 4 / 6 / 7;
+	grid-area: who_we_are_figure;
 	object-fit:contain;
 	width:40vw;
 	z-index:2;
@@ -307,7 +307,7 @@ h2{
 }
 
 #who_we_are_bg{
-	grid-area: 5 / 1 / 6 / 15;
+	grid-area: who_we_are_bg;
 	z-index:-1;
 	object-fit:cover;
 	width:100%;
@@ -316,7 +316,7 @@ h2{
 
 
 
-#what_we_do_bg{
+/*#what_we_do_bg{
 	background:url("media/what_we_do_bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
