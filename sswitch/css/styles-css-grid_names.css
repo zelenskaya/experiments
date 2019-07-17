@@ -155,8 +155,8 @@ h1{
 main{
 	margin: 0;
 	display:grid;
-	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start who_we_are_bg-start] 2vw [who_we_are_device-start ] 2fr[who_we_are_device-end who_we_are_figure-start] 1fr[title_screen_figure-end] 5fr [who_we_are_txt_wrapper-start who_we_are_figure-end] 1fr [title_screen_figure-end] 1fr [title_screen_txt_wrapper-end] 2fr 2vw [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end who_we_are_bg-end] ;
-	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start who_we_are_figure-start] 16vh [who_we_are_device-start who_we_are_bg-start] 50vh 32px [who_we_are_figure-end who_we_are_bg-end] min-content[who_we_are_txt_wrapper-end who_we_are_device-end] 30vh 20vh 90vh 40vh 90vh;
+	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start who_we_are_bg-start what_we_do_bg-start what_we_do_txt_wrapper-start what_we_do_blue_bg-start] 2vw [who_we_are_device-start ] 2fr[who_we_are_device-end who_we_are_figure-start] 1fr[title_screen_figure-end] 5fr [who_we_are_txt_wrapper-start who_we_are_figure-end what_we_do_txt_wrapper-end] 1fr [title_screen_figure-end] 1fr [title_screen_txt_wrapper-end] 2fr 2vw [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end who_we_are_bg-end what_we_do_bg-end what_we_do_blue_bg-end];
+	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start who_we_are_figure-start] 16vh [who_we_are_device-start who_we_are_bg-start] 50vh 32px [who_we_are_figure-end who_we_are_bg-end] min-content[who_we_are_txt_wrapper-end who_we_are_device-end what_we_do_bg-start] 80vh [what_we_do_bg-end what_we_do_txt_wrapper-start what_we_do_blue_bg-start] 30vh [what_we_do_txt_wrapper-end what_we_do_blue_bg-end] 90vh 40vh 90vh;
 	/*grid-template-rows: [header] 100px [title_screen_txt_wrapper-start] 40vh [title_screen_txt_wrapper-end] 12vh 70vh 16vh 50vh 32px min-content 30vh 20vh 90vh 40vh 90vh;*/
 }
 
@@ -316,18 +316,23 @@ h2{
 
 
 
-/*#what_we_do_bg{
+#what_we_do_bg{
+	margin-top:144px;
 	background:url("media/what_we_do_bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size:cover;
-	grid-area: 8 / 1 / 10 / 15;
+	grid-area: what_we_do_bg;
 	z-index:-1;
 	width:100%;
 }
 
 #what_we_do_txt_wrapper{
-	grid-area: 9 / 2 / 11 / 9;
+	grid-area: what_we_do_txt_wrapper;
+	margin-top:-172px;
+	padding-left:2vw;
+	padding-right:2vw;
+
 }
 
 #what_we_do_txt_wrapper h1{
@@ -339,11 +344,11 @@ h2{
 }
 
 #what_we_do_blue_bg{
-	grid-area: 9 / 1 / 11 / 15;
+	grid-area: what_we_do_blue_bg;
 	z-index:-3;
 }
 
-#what_we_do_photo{
+/*#what_we_do_photo{
 	grid-area:10 / 1 / 11 / 9;
 	z-index:-2;
 	object-fit:cover;
