@@ -155,8 +155,8 @@ h1{
 main{
 	margin: 0;
 	display:grid;
-	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start who_we_are_bg-start what_we_do_bg-start what_we_do_p-start what_we_do_h1-start what_we_do_blue_bg-start what_we_do_photo-start] 2vw [who_we_are_device-start ] 2fr[who_we_are_device-end who_we_are_figure-start technology_txt_wrapper-start technology_tabs-start] 1fr[title_screen_figure-start] 3fr [] 2fr [ what_we_do_photo-end who_we_are_txt_wrapper-start who_we_are_figure-end what_we_do_txt_on_grey_1-start] 1fr [what_we_do_p-end what_we_do_h1-end title_screen_figure-end what_we_do_txt_on_grey_1-end what_we_do_txt_on_grey_2-start] 1fr [title_screen_txt_wrapper-end technology_txt_wrapper-end technology_tabs-end] 2fr [what_we_do_txt_on_grey_2-end] 2vw [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end who_we_are_bg-end what_we_do_bg-end what_we_do_blue_bg-end];
-	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start who_we_are_figure-start] 16vh [who_we_are_device-start who_we_are_bg-start] 50vh 32px [who_we_are_figure-end who_we_are_bg-end] min-content[who_we_are_txt_wrapper-end who_we_are_device-end what_we_do_bg-start] 80vh [what_we_do_bg-end what_we_do_h1-start what_we_do_blue_bg-start what_we_do_txt_on_grey_1-start what_we_do_txt_on_grey_2-start] 72px [what_we_do_h1-end what_we_do_p-start] 25vh [what_we_do_p-end what_we_do_photo-start] 90vh [what_we_do_photo-end what_we_do_blue_bg-end what_we_do_txt_on_grey_1-end what_we_do_txt_on_grey_2-end technology_txt_wrapper-start]40vh[technology_txt_wrapper-end technology_tabs-start] 90vh [technology_tabs-end];
+	grid-template-columns: [left-gutter header-start title_screen_bg-start title_screen_txt_wrapper-start who_we_are_bg-start what_we_do_bg-start what_we_do_p-start what_we_do_h1-start what_we_do_blue_bg-start what_we_do_photo-start footer-start] 2vw [who_we_are_device-start ] 2fr[who_we_are_device-end who_we_are_figure-start technology_txt_wrapper-start technology_tabs-start] 1fr[title_screen_figure-start] 3fr [] 2fr [ what_we_do_photo-end who_we_are_txt_wrapper-start who_we_are_figure-end what_we_do_txt_on_grey_1-start] 1fr [what_we_do_p-end what_we_do_h1-end title_screen_figure-end what_we_do_txt_on_grey_1-end what_we_do_txt_on_grey_2-start] 1fr [title_screen_txt_wrapper-end technology_txt_wrapper-end technology_tabs-end] 2fr [what_we_do_txt_on_grey_2-end] 2vw [right-gutter header-end title_screen_bg-end who_we_are_txt_wrapper-end who_we_are_bg-end what_we_do_bg-end what_we_do_blue_bg-end footer-end];
+	grid-template-rows: [header-start ] 100px [title_screen_txt_wrapper-start title_screen_figure-start header-end] 30vh [title_screen_bg-start] 20vh [title_screen_txt_wrapper-end] 82vh [title_screen_figure-end title_screen_bg-end who_we_are_txt_wrapper-start who_we_are_figure-start] 16vh [who_we_are_device-start who_we_are_bg-start] 50vh 32px [who_we_are_figure-end who_we_are_bg-end] min-content[who_we_are_txt_wrapper-end who_we_are_device-end what_we_do_bg-start] 80vh [what_we_do_bg-end what_we_do_h1-start what_we_do_blue_bg-start what_we_do_txt_on_grey_1-start what_we_do_txt_on_grey_2-start] 72px [what_we_do_h1-end what_we_do_p-start] 25vh [what_we_do_p-end what_we_do_photo-start] 90vh [what_we_do_photo-end what_we_do_blue_bg-end what_we_do_txt_on_grey_1-end what_we_do_txt_on_grey_2-end technology_txt_wrapper-start]40vh[technology_txt_wrapper-end technology_tabs-start] 90vh [technology_tabs-end footer-start] 60px [footer-end];
 	grid-column-gap: 1vw;}
 
 header {
@@ -420,6 +420,7 @@ h2{
 #technology_tabs{
 	grid-area: technology_tabs;
 	display:flex;
+	padding-top:48px;
 }
 
 #left_tab, #right_tab{
@@ -466,4 +467,7 @@ h2{
 #app_store_badge{
 	align-self:flex-start;
 	
+}
+footer{
+	grid-area:footer;
 }
